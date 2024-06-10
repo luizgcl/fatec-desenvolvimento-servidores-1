@@ -1,41 +1,42 @@
 <?php
-    $exemplos = [
-        [
-            'nome' => 'Array 1', 
-            'link'  => 'arrayOne.php'
-        ],
-        [
-            'nome' => 'Array 1 formatado', 
-            'link' => 'arrayOneFormated.php'
-        ],
-        [
-            'nome' => 'Array 2', 
-            'link'  => 'arrayTwo.php'
-        ],
-        [
-            'nome' => 'Array 2 melhorado', 
-            'link' => 'arrayTwoUpgraded.php'
-        ],
-        [
-            'nome' => 'Array 3', 
-            'link'  => 'arrayThree.php'
-        ],
-        [
-            'nome' => 'Array 4', 
-            'link' => 'arrayFour.php'
-        ],
-        [
-            'nome' => 'Array 4 melhorado', 
-            'link'  => 'arrayFourUpgraded.php'
-        ],
-        [
-            'nome' => 'Array 5', 
-            'link' => 'arrayFive.php'
-        ]
-    ];
+$exemplos = [
+    [
+        'nome' => 'Array 1',
+        'link'  => 'arrayOne.php'
+    ],
+    [
+        'nome' => 'Array 1 formatado',
+        'link' => 'arrayOneFormated.php'
+    ],
+    [
+        'nome' => 'Array 2',
+        'link'  => 'arrayTwo.php'
+    ],
+    [
+        'nome' => 'Array 2 melhorado',
+        'link' => 'arrayTwoUpgraded.php'
+    ],
+    [
+        'nome' => 'Array 3',
+        'link'  => 'arrayThree.php'
+    ],
+    [
+        'nome' => 'Array 4',
+        'link' => 'arrayFour.php'
+    ],
+    [
+        'nome' => 'Array 4 melhorado',
+        'link'  => 'arrayFourUpgraded.php'
+    ],
+    [
+        'nome' => 'Array 5',
+        'link' => 'arrayFive.php'
+    ]
+];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,6 +48,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/assets/style.css" />
 </head>
+
 <body>
     <nav class="bg-white shadow-lg p-2 mb-4">
         <h1>Array</h1>
@@ -66,14 +68,14 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach($exemplos as $e): ?>
+                <?php foreach ($exemplos as $e) : ?>
                     <tr>
                         <td><?= $e['nome'] ?></td>
                         <td><?= $e['link']; ?></td>
                         <td>
-                            <?php echo "<a href='".$e['link']."' class='btn btn-primary'>"; ?>
-                                Acessar
-                                <i class="bi bi-arrow-up-right-square"></i>
+                            <?php echo "<a href='" . $e['link'] . "' class='btn btn-primary'>"; ?>
+                            Acessar
+                            <i class="bi bi-arrow-up-right-square"></i>
                             <?php echo "</a>"; ?>
                         </td>
                     </tr>
@@ -82,4 +84,6 @@
         </table>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </html>

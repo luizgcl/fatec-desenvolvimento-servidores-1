@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/assets/style.css" />
 </head>
+
 <body>
     <nav class="w-100 bg-white shadow-lg p-2 mb-4">
         <h1>If e Else</h1>
@@ -20,17 +22,17 @@
             <i class="bi bi-arrow-left"></i>
             Voltar
         </a>
-        
+
         <div class="row">
             <div class="col-6">
                 <div class="bg-white p-2 rounded">
                     <h3>Informe sua idade</h3>
-                     <br/>
+                    <br />
                     <form method="get" action="ifElse.php">
                         <label for="age">Idade:</label>
-                        <input type="number" class="form-control" name="ageName" id="age"><br/>
+                        <input type="number" class="form-control" name="ageName" id="age"><br />
                         <footer class="d-flex justify-content-end">
-                            <input type="submit" class="btn btn-success" value="Verificar"/>
+                            <input type="submit" class="btn btn-success" value="Verificar" />
                         </footer>
                     </form>
                 </div>
@@ -45,19 +47,19 @@
                         </p>
                         <p>
                             <label for="note">Nota 1:</label>
-                            <input class="form-control" type="number" name="studentNote1Name" id="note"/>
+                            <input class="form-control" type="number" name="studentNote1Name" id="note" />
                         </p>
                         <p>
                             <label for="note2">Nota 2:</label>
-                            <input class="form-control" type="number" name="studentNote2Name" id="note2"/>
+                            <input class="form-control" type="number" name="studentNote2Name" id="note2" />
                         </p>
                         <p>
                             <label for="note3">Nota 3:</label>
-                            <input class="form-control" type="number" name="studentNote3Name" id="note3"/>
+                            <input class="form-control" type="number" name="studentNote3Name" id="note3" />
                         </p>
                         <p>
                             <label for="note4">Nota 4:</label>
-                            <input class="form-control" type="number" name="studentNote4Name" id="note4"/>
+                            <input class="form-control" type="number" name="studentNote4Name" id="note4" />
                         </p>
                         <footer class="d-flex justify-content-end">
                             <input type="submit" class="btn btn-success" value="Enviar dados">
@@ -68,4 +70,6 @@
         </div>
     </section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </html>

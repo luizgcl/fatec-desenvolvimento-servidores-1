@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/assets/style.css" />
 </head>
+
 <body>
     <nav class="bg-white shadow-lg mb-4 p-2">
         <h1>Formulário Dinâmico</h1>
@@ -23,9 +25,9 @@
         <div class="bg-white p-2 rounded">
             <form action="showExec.php" method="get">
                 <?php
-                    for ($iterator = 0; $iterator <= 4; $iterator++) { 
-                        echo "Array [$iterator]: <input type='number' class='form-control' name='value".$iterator."'/> <br/>";
-                    }
+                for ($iterator = 0; $iterator <= 4; $iterator++) {
+                    echo "Array [$iterator]: <input type='number' class='form-control' name='value" . $iterator . "'/> <br/>";
+                }
                 ?>
                 <footer class="d-flex justify-content-end">
                     <input type="submit" class="btn btn-success" value="Enviar">
@@ -34,4 +36,6 @@
         </div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </html>

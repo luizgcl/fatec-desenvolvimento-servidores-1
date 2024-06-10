@@ -1,21 +1,22 @@
 <?php
-    $exemplos = [
-        [
-            'nome' => 'Contador', 
-            'link'  => 'contador.php'
-        ],
-        [
-            'nome' => 'While', 
-            'link' => 'while.php'
-        ],
-        [
-            'nome' => 'While Dinâmico',
-            'link' => 'while_dinamico.php'
-        ]
-    ];
+$exemplos = [
+    [
+        'nome' => 'Contador',
+        'link'  => 'contador.php'
+    ],
+    [
+        'nome' => 'While',
+        'link' => 'while.php'
+    ],
+    [
+        'nome' => 'While Dinâmico',
+        'link' => 'while_dinamico.php'
+    ]
+];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +28,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/assets/style.css" />
 </head>
+
 <body>
     <nav class="bg-white shadow-lg p-2 mb-4">
         <h1>Contador e While</h1>
@@ -45,14 +47,14 @@
                 </tr>
             </theead>
             <tbody>
-                <?php foreach ($exemplos as $exemplo): ?>
+                <?php foreach ($exemplos as $exemplo) : ?>
                     <tr>
                         <td><?= $exemplo['nome']; ?></td>
                         <td><?= $exemplo['link']; ?></td>
                         <td>
-                            <?php echo "<a class='btn btn-primary' href='".$exemplo['link']."'>"; ?>
-                                Acessar
-                                <i class="bi bi-arrow-up-right-square"></i>
+                            <?php echo "<a class='btn btn-primary' href='" . $exemplo['link'] . "'>"; ?>
+                            Acessar
+                            <i class="bi bi-arrow-up-right-square"></i>
                             <?php echo "</a>"; ?>
                         </td>
                     </tr>
@@ -61,4 +63,6 @@
         </table>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </html>

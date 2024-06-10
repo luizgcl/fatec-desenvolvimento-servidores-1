@@ -1,61 +1,62 @@
 <?php
-    $conteudos = [
-        [
-            'nome' => 'Aritméticos',
-            'link' => 'aritmeticos.php'
-        ],
-        [
-            'nome' => 'Aspas',
-            'link' => 'aspas.php'
-        ],
-        [
-            'nome' => 'Atribuição',
-            'link' => 'atribuicao.php'
-        ],
-        [
-            'nome' => 'Comentários',
-            'link' => 'comentarios.php'
-        ],
-        [
-            'nome' => 'Concatenar',
-            'link' => 'concatenar.php'
-        ],
-        [
-            'nome' => 'Constante',
-            'link' => 'constante.php'
-        ],
-        [
-            'nome' => 'Escape',
-            'link' => 'escape.php'
-        ],
-        [
-            'nome' => 'Get',
-            'link' => 'get.php'
-        ],
-        [
-            'nome' => 'Lógico',
-            'link' => 'logico.php'
-        ],
-        [
-            'nome' => 'Quebra',
-            'link' => 'quebra.php'
-        ],
-        [
-            'nome' => 'Relacionais',
-            'link' => 'relacionais.php'
-        ],
-        [
-            'nome' => 'Tipo',
-            'link' => 'tipo.php'
-        ],
-        [
-            'nome' => 'Variáveis',
-            'link' => 'variaveis.php'
-        ]
-    ];
+$conteudos = [
+    [
+        'nome' => 'Aritméticos',
+        'link' => 'aritmeticos.php'
+    ],
+    [
+        'nome' => 'Aspas',
+        'link' => 'aspas.php'
+    ],
+    [
+        'nome' => 'Atribuição',
+        'link' => 'atribuicao.php'
+    ],
+    [
+        'nome' => 'Comentários',
+        'link' => 'comentarios.php'
+    ],
+    [
+        'nome' => 'Concatenar',
+        'link' => 'concatenar.php'
+    ],
+    [
+        'nome' => 'Constante',
+        'link' => 'constante.php'
+    ],
+    [
+        'nome' => 'Escape',
+        'link' => 'escape.php'
+    ],
+    [
+        'nome' => 'Get',
+        'link' => 'get.php'
+    ],
+    [
+        'nome' => 'Lógico',
+        'link' => 'logico.php'
+    ],
+    [
+        'nome' => 'Quebra',
+        'link' => 'quebra.php'
+    ],
+    [
+        'nome' => 'Relacionais',
+        'link' => 'relacionais.php'
+    ],
+    [
+        'nome' => 'Tipo',
+        'link' => 'tipo.php'
+    ],
+    [
+        'nome' => 'Variáveis',
+        'link' => 'variaveis.php'
+    ]
+];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,6 +68,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/assets/style.css" />
 </head>
+
 <body>
     <nav class="bg-white shadow-lg mb-4 p-2">
         <h1>Atributos do PHP</h1>
@@ -76,7 +78,7 @@
             <i class="bi bi-arrow-left"></i>
             Voltar
         </a>
-        
+
         <table class="table table-bordered rounded">
             <thead>
                 <tr>
@@ -86,14 +88,14 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach($conteudos as $conteudo): ?>
+                <?php foreach ($conteudos as $conteudo) : ?>
                     <tr>
                         <td><?= $conteudo['nome']; ?></td>
                         <td><?= $conteudo['link']; ?></td>
                         <td>
-                            <?php echo '<a href="'.$conteudo['link'].'" class="btn btn-primary">'; ?>
-                                Acessar
-                                <i class="bi bi-arrow-up-right-square"></i>
+                            <?php echo '<a href="' . $conteudo['link'] . '" class="btn btn-primary">'; ?>
+                            Acessar
+                            <i class="bi bi-arrow-up-right-square"></i>
                             <?php echo "</a>"; ?>
                         </td>
                     </tr>
@@ -102,4 +104,6 @@
         </table>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </html>
